@@ -1,4 +1,4 @@
-SIXTEENHEX = "504f56474c4f5620" #一段16进制字符串 有什么用呢?
+SIXTEENHEX = "4e5154414a44545a" #一段16进制字符串 有什么用呢?
 print(SIXTEENHEX)
 import base64 #导入base64模块
 bytes_data = bytes.fromhex(SIXTEENHEX)
