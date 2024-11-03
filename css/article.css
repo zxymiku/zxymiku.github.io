@@ -1,0 +1,469 @@
+article {
+  color: #444;
+  font-family: microsoft yahei;
+}
+article p {
+  line-height: 24px;
+}
+article .highlight {
+  padding: 0 0.5em;
+  background: #282c34;
+  color: #abb2bf;
+  margin: 25px 0;
+  border-radius: 13px;
+  overflow: auto;
+}
+article .highlight .gutter {
+  border-right: 1px solid #35393b;
+}
+article pre {
+  border-radius: 13px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 6px 0 0;
+  position: relative;
+  background: #282c34;
+  line-height: 1.3em;
+}
+article pre code {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  font-size: 100%;
+  font-family: Consolas;
+}
+article a {
+  -webkit-transition: color 0.35s ease-out;
+  transition: color 0.35s ease-out;
+  color: #31aeff;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+article a::before {
+  font-family: 'kirafont';
+  content: '\ec7f\ ';
+}
+article a:hover,
+article a:focus {
+  color: #31aeff;
+  text-decoration: underline;
+}
+article a.CodePenLink {
+  transition: 0.2s;
+  padding: 0.2em;
+  color: #31aeff;
+  border-bottom: 1px solid rgba(49,174,255,0.85);
+}
+article a.CodePenLink:hover {
+  text-shadow: 0px 0px 5px rgba(49,174,255,0.25);
+  text-decoration: none;
+  border-bottom: 1px solid #31aeff;
+}
+article p {
+  margin: 25px 0;
+  position: relative;
+}
+article p::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+article code {
+  display: inline;
+  border-radius: 4px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, Roboto, RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Segoe UI';
+  padding: 0 4px;
+  margin: 1px 3px;
+  word-break: break-all;
+  color: #31aeff;
+  background-color: rgba(49,174,255,0.25);
+}
+article del {
+  color: #999;
+  font-size: 0.9em;
+}
+article img {
+  display: block;
+  border-radius: 13px;
+  margin: 0 auto;
+}
+article img:not(.kira-post-cover-image) {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+article img:not(.kira-post-cover-image):hover {
+  box-shadow: 0 0 10px rgba(49,174,255,0.3);
+  transform: scale(1.01, 1.01);
+  border-radius: 0;
+}
+article img:not(.kira-post-cover-image):active {
+  transform: scale(1, 1);
+}
+article img.lazyload,
+article img.lazyloading {
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+article img.lazyloaded {
+  opacity: 1;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  color: #111;
+  margin: 25px 0;
+}
+article h4,
+article h5,
+article h6 {
+  position: relative;
+}
+article h4::before,
+article h5::before,
+article h6::before {
+  display: inline-block;
+  width: 1em;
+  content: '#';
+  color: #31aeff;
+}
+article h1 {
+  font-size: 2.5em;
+}
+article h2 {
+  font-size: 1.7em;
+  position: relative;
+  padding-bottom: 10px;
+}
+article h2::before {
+  content: '';
+  width: 100%;
+  padding: 0px 25px;
+  border-bottom: 1px solid #eee;
+  position: absolute;
+  bottom: -1px;
+  left: -25px;
+  box-sizing: unset;
+}
+article h2::after {
+  transition: all 0.35s ease-out;
+  content: '';
+  position: absolute;
+  background: #31aeff;
+  width: 1em;
+  height: 5px;
+  bottom: -3px;
+  left: 0;
+  border-radius: 10px;
+}
+article h2:hover::after {
+  width: 2em;
+}
+article h3 {
+  font-size: 1.3em;
+}
+article h4 {
+  font-size: 1.15em;
+}
+article h5 {
+  font-size: 1em;
+}
+article h6 {
+  font-size: 0.9em;
+}
+article blockquote {
+  color: #666;
+  margin: 25px 0;
+  padding: 0.1em 2.2em;
+  background-color: #f8f8f8;
+  line-height: 28px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-family: sf pro sc, sf pro display, sf pro icons, aos icons, pingfang sc, helvetica neue, helvetica, arial, sans-serif;
+}
+article blockquote::before {
+  content: '\201C';
+  top: 15px;
+  left: 10px;
+  position: absolute;
+  color: #888;
+  font-size: 3em;
+}
+article blockquote::after {
+  content: '\201D';
+  bottom: -8px;
+  right: 10px;
+  position: absolute;
+  color: #888;
+  font-size: 3em;
+}
+article hr {
+  display: block;
+  border: 0;
+  border-top: 1px dashed #ccc;
+  margin: 25px 0;
+  padding: 0;
+}
+article sub,
+article sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+article sub {
+  bottom: -0.25em;
+}
+article sup {
+  top: -0.5em;
+}
+article ul {
+  padding: 0 0 0 2em;
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0 !important;
+}
+article ul .mdui-checkbox {
+  padding-left: 22px;
+  height: 18px;
+}
+article ul .mdui-checkbox-icon {
+  top: 4px;
+}
+article ul li {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 25px;
+  line-height: 1rem;
+}
+article ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #31aeff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-left: -26px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  z-index: 3;
+  position: relative;
+}
+article ul li::after {
+  content: '';
+  height: 100%;
+  width: 1.5px;
+  background: rgba(49,174,255,0.25);
+  position: absolute;
+  left: 6.25px;
+  top: 20px;
+}
+article ul li:last-child::after {
+  display: none;
+}
+article ul span {
+  margin-right: 15px;
+}
+article ol {
+  padding: 0 0 0 2.5em;
+  margin-top: 0;
+}
+article > ol {
+  list-style-type: none;
+  counter-reset: item;
+}
+article > ol > li {
+  position: relative;
+}
+article > ol > li::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  top: 0.2rem;
+  left: -2.5em;
+  height: 1.6rem;
+  width: 1.6rem;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 1.6rem;
+  background-color: rgba(49,174,255,0.25);
+  color: #31aeff;
+}
+article li {
+  line-height: 2rem;
+}
+article li p {
+  margin: 0 !important;
+}
+article dd {
+  margin: 0 0 0 2em;
+}
+article > table {
+  color: #5b6064;
+  border-spacing: 0;
+  border-collapse: collapse;
+  max-width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 25px auto;
+  background: transparent;
+  display: block;
+}
+article > table::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+article > table::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+article > table thead {
+  border-bottom: 1px solid #eee;
+  background-color: #f8f8f8;
+}
+article > table thead tr {
+  background-color: #f8f8f8;
+}
+article > table th {
+  border: 1px solid #eee;
+  padding: 13px 26px;
+  font-weight: 400;
+}
+article > table td {
+  border: 1px solid #eee;
+  padding: 13px 26px;
+}
+article > table tr {
+  background-color: #fff;
+}
+article > table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+article img,
+article canvas,
+article iframe,
+article video,
+article svg,
+article select,
+article textarea {
+  width: auto;
+  max-width: 100%;
+}
+article input[type='checkbox'] {
+  margin-right: 0.25em;
+}
+article input[type='checkbox']::after {
+  content: '✔';
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+article input[type='checkbox']:disabled::after {
+  cursor: not-allowed;
+}
+article input[type='checkbox']:checked::after {
+  border-color: #31aeff;
+  background-color: #31aeff;
+}
+details ul {
+  padding-left: 1.7em;
+}
+details[open] > summary .add {
+  display: none;
+}
+details[open] > summary .remove {
+  display: inline-block;
+}
+details summary {
+  cursor: pointer;
+}
+details summary i {
+  margin-right: 0.3em;
+  width: 24px;
+}
+details summary .remove {
+  display: none;
+}
+details .mdui-btn {
+  background-color: #31aeff;
+  color: #fff;
+  border-radius: 10px;
+}
+details .mdui-btn:focus,
+details .mdui-btn:active {
+  background-color: #31aeff;
+  color: #fff;
+}
+details .aplayer {
+  -webkit-box-shadow: 0 0 0 1px #eee !important;
+  box-shadow: 0 0 0 1px #eee !important;
+  border-radius: 10px !important;
+  margin: 25px 0 !important;
+  height: 90px;
+}
+details .aplayer .aplayer-info {
+  padding: 9px 7px 0 10px !important;
+}
+details .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+  margin-left: 1px !important;
+  padding-right: 3px;
+}
+details .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar,
+details .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded,
+details .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+  height: 6px !important;
+  border-radius: 10px !important;
+}
+details .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+  height: 12px !important;
+  width: 12px !important;
+  right: 3px !important;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.18) !important;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.18) !important;
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+details .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar {
+  right: 10.5px;
+}
+details .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar,
+details .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume {
+  border-radius: 10px;
+  width: 6px;
+}
+details .aplayer .aplayer-list ol li {
+  border-top: none !important;
+}
+details .aplayer .aplayer-list ol li.aplayer-list-light {
+  background: #f8f8f8 !important;
+}
+details div.kira-aplayer-container {
+  margin: 0;
+}
+details div.kira-aplayer-container div[id^='aplayer-'] div.aplayer-body div.aplayer-pic {
+  width: 90px;
+  height: 90px;
+}
+details div.kira-aplayer-container div[id^='aplayer-'] div.aplayer-body div.aplayer-info {
+  margin-left: 90px;
+  height: 90px;
+}
+details div.kira-aplayer-container div[id^='aplayer-'] div.aplayer-body div.aplayer-info div.aplayer-controller > div.aplayer-bar-wrap > div.aplayer-bar > div.aplayer-played {
+  background: #31aeff !important;
+}
+details div.kira-aplayer-container div[id^='aplayer-'] div.aplayer-body div.aplayer-info div.aplayer-controller > div.aplayer-bar-wrap > div.aplayer-bar > div.aplayer-played span.aplayer-thumb {
+  background: #31aeff !important;
+}
